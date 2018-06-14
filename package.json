@@ -1,7 +1,7 @@
 {
-  "name": "openpolling",
+  "name": "nuxt-couchdb-template",
   "version": "1.0.0",
-  "description": "Online polling platform integrated with social networks",
+  "description": "Nuxt template ready to work with CouchDb through websockets, supporting also authentication.",
   "author": "Lester Perez <prz.lester@gmail.com>",
   "private": true,
   "scripts": {
