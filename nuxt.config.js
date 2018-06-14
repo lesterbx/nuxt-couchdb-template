@@ -1,10 +1,9 @@
+const env = require('./env')
 module.exports = {
   /*
   ** Environmental variables
   */
-  env: {
-    db: 'http://localhost:5980',
-  },
+  env: env,
   /*
   ** Headers of the page
   */

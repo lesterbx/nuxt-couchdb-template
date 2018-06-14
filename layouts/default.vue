@@ -1,16 +1,27 @@
 <template>
   <div>
-    <nuxt/>
-    <my-footer/>
+    <splash v-if="loadingApp"/>
+    <nuxt v-else/>
   </div>
 </template>
 
 <script>
-import MyFooter from '~/components/Footer.vue'
-
+import splash from '@/components/splash'
+import { mapState, mapActions } from 'vuex'
 export default {
   components: {
-    MyFooter
+    splash
+  },
+  computed: {
+    ...mapState(['loadingApp'])
+  },
+  methods: {
+    ...mapActions(['init'])
+  },
+  mounted () {
+    if (process.browser) {
+      this.init()
+    }
   }
 }
 </script>

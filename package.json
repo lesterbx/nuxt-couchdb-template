@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "chai": "^4.1.2",
     "cross-env": "^5.0.1",
+    "eslint-plugin-vue": "^4.5.0",
     "express": "^4.15.3",
     "morgan": "^1.9.0",
     "nuxt": "latest",
@@ -21,6 +23,7 @@
     "socket-pouch": "^2.0.0",
     "source-map-support": "^0.4.15",
     "superlogin": "^0.6.1",
+    "superlogin-client": "^0.8.0",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

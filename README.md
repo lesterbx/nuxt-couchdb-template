@@ -1,18 +1,17 @@
-# openpolling
+# nuxt-couchdb-template
 
-> Online polling platform integrated with social networks
+Template for Nuxt ready to work with CouchDB/PouchDB through websockets and including authentication support with superlogin.
 
-## Build Setup
+## Packages included
+- [Nuxt](https://nuxtjs.org/)
+- [Vuex](https://vuex.vuejs.org/)
+- [Express API](https://github.com/nuxt-community/express-template)
+- [PouchDB](https://pouchdb.com/)
+- [Superlogin Server](https://github.com/colinskow/superlogin)
+- [Superlogin Cliente](https://github.com/micky2be/superlogin-client)
+- [Socket Pouch](https://github.com/pouchdb-community/socket-pouch)
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+## How does it works
+To allow the use of PouchDB with websockets the [Socket Pouch](https://github.com/pouchdb-community/socket-pouch) plugin is used, the configuration for the proxy server is included in the Nuxt environment variables (nuxt.config.js).  
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm start
-```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+For the authentication [Superlogin](https://github.com/colinskow/superlogin) is used.
